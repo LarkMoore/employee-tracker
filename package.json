@@ -4,7 +4,8 @@
   "description": "This is a tracker for employee data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node employee.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/LarkMoore/employee-tracker/issues"
   },
-  "homepage": "https://github.com/LarkMoore/employee-tracker#readme"
+  "homepage": "https://github.com/LarkMoore/employee-tracker#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "console-table-printer": "^2.10.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "mysql": "^2.18.1"
+  }
 }
