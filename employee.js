@@ -6,7 +6,7 @@ const figlet = require('figlet');
 const chalk = require('chalk');
 
 const welcomeBeam = () => {
-  console.log(chalk.blue(figlet.textSync('\nEmployee \nTracking \nDatabase', { font: 'standard', horizontalLayout: 'default', width: 80 })));
+  console.log(chalk.purple(figlet.textSync('\nEmployee \nTracking \nDatabase', { font: 'standard', horizontalLayout: 'default', width: 80 })));
 };
 welcomeBeam();
 
