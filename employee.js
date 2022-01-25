@@ -3,10 +3,11 @@ const mysql = require('mysql');
 const inquirer = require('inquirer');
 const { Table } = require('console-table-printer');
 const figlet = require('figlet');
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 const welcomeBeam = () => {
-  console.log(chalk.purple(figlet.textSync('\nEmployee \nTracking \nDatabase', { font: 'standard', horizontalLayout: 'default', width: 80 })));
+  let message = figlet.textSync('\nEmployee \nTracking \nDatabase', { font: 'standard', horizontalLayout: 'default', width: 80 })
+  console.log(chalk.blue("this is a test"));
 };
 welcomeBeam();
 
@@ -19,8 +20,8 @@ const connection = mysql.createConnection({
 
   // Login info
   user: 'root',
-  password: 'root',
-  database: 'employee_trackerdb',
+  password: 'Pr0sper!ty444',
+  database: 'employee_TrackerDB',
 });
 
 //Connection to employee database
